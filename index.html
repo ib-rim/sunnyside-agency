@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/main.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+  <header>
+    <div class="brand">sunnyside</div>
+    <nav class="desktop">
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <img onclick="toggleMenu()" class="mobile hamburger" src="images/icon-hamburger.svg"/>
+    <nav class="mobile">
+      <ul id="menu" class="menu">
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <script type="text/javascript">
+
+      document.getElementById("menu").style.display = "none";
+
+      function toggleMenu() {
+        if(document.getElementById("menu").style.display === "none") {
+          document.getElementById("menu").style.display = "block";
+          document.getElementById("arrow").style.display = "none";
+        }
+        else if(document.getElementById("menu").style.display === "block") {
+          document.getElementById("menu").style.display = "none";
+          document.getElementById("arrow").style.display = "block";
+        }
+        
+      }
+    </script>
+    <div class="headerText">We are creatives</div>
+    <img id="arrow" class="arrow" src="images/icon-arrow-down.svg"/>
+  </header>
+
+  <div class="transform grid">
+    <img class="mobile" src="images/mobile/image-transform.jpg"/>
+    <section>
+      <h2 class="squareHeader">Transform your brand</h2>
+      
+      <p class="squareText">
+        We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+
+      <p class="transformLearnMore">LEARN MORE</p>
+    </section>
+    <img class="desktop" src="images/desktop/image-transform.jpg"/>
+  </div>
+    
+  <div class="audience grid">
+    <img class="mobile" src="images/mobile/image-stand-out.jpg"/>
+    <img class="desktop" src="images/desktop/image-stand-out.jpg"/>
+    <section>
+      <h2 class="squareHeader">Stand out to the right audience</h2>
+      
+      <p class="squareText">
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      </p>
+
+      <p class="audienceLearnMore">LEARN MORE</p>
+    </section>
+  </div>
+    
+  <div class="grid">
+    <div class="graphicDesign">
+      <h3 class="graphicHeader">Graphic Design</h3>
+      <p class="graphicText">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </div>
+      
+    <div class="photography">
+      <h3 class="photographyHeader">Photography</h3>
+      <p class="photographyText">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </div>
+  </div>  
+
+  <div class="testimonials">
+    <div>
+      <h1 class="testimonialsHeader">CLIENT TESTIMONIALS</h1>
+    </div>
+    
+    <div class="testimonialColumns">    
+      <div class="testimonial">
+        <img class="photo" src="images/image-emily.jpg"/>
+        <p class="testimonialText">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="name">Emily R.</p>
+        <p class="role">Marketing Director</p>
+      </div>
+      
+      <div class="testimonial">
+        <img class="photo" src="images/image-thomas.jpg"/>
+        <p class="testimonialText">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="name">Thomas S.</p>
+        <p class="role">Chief Operating Officer</p>
+      </div>
+      
+      <div class="testimonial">
+        <img class="photo" src="images/image-jennie.jpg"/>
+        <p class="testimonialText">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="name">Jennie F.</p>
+        <p class="role">Business Owner</p>
+      </div>
+    </div>
+  </div>
+    
+  <div class="grid gallery">
+    <img class="desktop" src="images/desktop/image-gallery-milkbottles.jpg">
+    <img class="desktop" src="images/desktop/image-gallery-orange.jpg">
+    <img class="desktop" src="images/desktop/image-gallery-cone.jpg">
+    <img class="desktop" src="images/desktop/image-gallery-sugarcubes.jpg">
+    <img class="mobile" src="images/mobile/image-gallery-milkbottles.jpg">
+    <img class="mobile" src="images/mobile/image-gallery-orange.jpg">
+    <img class="mobile" src="images/mobile/image-gallery-cone.jpg">
+    <img class="mobile" src="images/mobile/image-gallery-sugar-cubes.jpg">
+  </div>
+  <footer>
+    <div class="footerBrand">sunnyside</div>
+    <div class="footerLinks">   
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+    </div>
+    <div class="socialIcons">
+      <img class="socialIcon" src="images/icon-facebook.svg"/>
+      <img class="socialIcon" src="images/icon-instagram.svg"/>
+      <img class="socialIcon" src="images/icon-twitter.svg"/>
+      <img class="socialIcon" src="images/icon-pinterest.svg"/>
+    </div>
+  </footer>
+
+</body>
+</html>
